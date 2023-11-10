@@ -53,6 +53,29 @@ var NucleoConfig = nucleo.Config{
 	Metrics: false,
 	// MetricsRate: 1,
 
+	// Retry policy settings.
+	RetryPolicy: nucleo.RetryPolicy{
+		// Enable feature
+		Enabled: false,
+
+		// Count of retries
+		Retries: 5,
+
+		// First delay in milliseconds.
+		Delay: 100,
+
+		// Maximum delay in milliseconds.
+		MaxDelay: 1000,
+
+		// Backoff factor for delay. 2 means exponential backoff.
+		Factor: 2,
+
+		// A function to check failed requests.
+		Check: func(err error) bool {
+			return err != nil
+		},
+	},
+
 	// Define serializer.
 	// Available values: JSON.
 	// Serializer: "JSON",

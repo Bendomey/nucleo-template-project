@@ -7,13 +7,16 @@ import (
 
 	"github.com/Bendomey/nucleo-go/broker"
 	"github.com/Bendomey/nucleo-template-project/configs"
+	"github.com/Bendomey/nucleo-template-project/internal/services"
 )
 
 func main() {
 	nucleoBroker := broker.New(&configs.NucleoConfig)
 
-	// list all services here
-	nucleoBroker.PublishServices()
+	// Register services
+	nucleoBroker.PublishServices(
+		services.Greeter,
+	)
 
 	nucleoBroker.Start()
 
