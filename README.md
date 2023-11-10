@@ -2,16 +2,16 @@
 :mortar_board: Nucleo-based microservices project template.
 
 ## Features
-- Nucleo v0.1.0 with full-detailed `nucleo.config.go` file.
-- Common mono-repo project with a demo `greeter` service.
-- Sample database `products` service (with file-based NeDB in development & MongoDB in production).
-- Optional API Gateway service with detailed service settings.
-- Beautiful static welcome page to test generated services & watch nodes and services.
-- Optional Transporter & Cacher.
-- Metrics & Tracing.
-- Docker & Docker Compose & Kubernetes files.
-- Unit tests with [Go Testing](https://pkg.go.dev/testing).
-- Lint with [GolangCI-lint](https://github.com/golangci/golangci-lint).
+- [ ] Nucleo v0.1.0 with full-detailed `nucleo.config.go` file.
+- [ ] Common mono-repo project with a demo `greeter` service.
+- [ ] Sample database `products` service (with file-based NeDB in development & MongoDB in production).
+- [ ] Optional API Gateway service with detailed service settings.
+- [ ] Beautiful static welcome page to test generated services & watch nodes and services.
+- [ ] Optional Transporter & Cacher.
+- [ ] Metrics & Tracing.
+- [ ] Docker & Docker Compose & Kubernetes files.
+- [ ] Unit tests with [Go Testing](https://pkg.go.dev/testing).
+- [ ] Lint with [GolangCI-lint](https://github.com/golangci/golangci-lint).
 
 
 ## Install
