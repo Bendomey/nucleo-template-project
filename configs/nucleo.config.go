@@ -78,10 +78,10 @@ var NucleoConfig = nucleo.Config{
 
 	// Define serializer.
 	// Available values: JSON.
-	// Serializer: "JSON",
+	Serializer: nucleo.SerializerJSON,
 
 	// Available values: "RoundRobin", "Random"
-	// Strategy: "RoundRobin",
+	Strategy: nucleo.StrategyRandom,
 
 	// Define registry strategy.
 	// Define custom Strategy. By default, we use the random strategy.

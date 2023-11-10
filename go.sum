@@ -1,5 +1,7 @@
 github.com/Bendomey/nucleo-go v0.1.1 h1:8xu/0LTmrqCR3fD14s4zaFhRXCGJp6lswlHR28GHlQw=
 github.com/Bendomey/nucleo-go v0.1.1/go.mod h1:R6XOnFPlDArIr0c7MDfc1AbG6KtmrJd2mfJ8SxcCD8w=
+github.com/Bendomey/nucleo-go v0.1.2 h1:3deZ06VqS4eCZ6cQUJN/D72zkxupLh7Jdi9UiZ4AQ+4=
+github.com/Bendomey/nucleo-go v0.1.2/go.mod h1:R6XOnFPlDArIr0c7MDfc1AbG6KtmrJd2mfJ8SxcCD8w=
 github.com/armon/go-metrics v0.4.1 h1:hR91U9KYmb6bLBYLQjyM+3j+rcd/UhE+G78SFnF8gJA=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=

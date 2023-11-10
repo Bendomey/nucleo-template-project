@@ -2,7 +2,7 @@ module github.com/Bendomey/nucleo-template-project
 
 go 1.19
 
-require github.com/Bendomey/nucleo-go v0.1.1
+require github.com/Bendomey/nucleo-go v0.1.2
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
