@@ -15,7 +15,8 @@
 
 
 ## Install
-> This is temporal
+> This is temporal.
+
 Clone this template
 
 ```bash
