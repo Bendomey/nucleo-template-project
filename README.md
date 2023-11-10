@@ -3,15 +3,15 @@
 
 ## Features
 - [x] Nucleo v0.1.1 with full-detailed `configs/nucleo.config.go` file.
-- [ ] Common mono-repo project with a demo `greeter` service.
+- [x] Common mono-repo project with a demo `greeter` service.
 - [ ] Sample database `products` service (with file-based NeDB in development & MongoDB in production).
 - [ ] Optional API Gateway service with detailed service settings.
 - [ ] Beautiful static welcome page to test generated services & watch nodes and services.
 - [ ] Optional Transporter & Cacher.
 - [ ] Metrics & Tracing.
 - [ ] Docker & Docker Compose & Kubernetes files.
-- [ ] Unit tests with [Go Testing](https://pkg.go.dev/testing).
-- [ ] Lint with [GolangCI-lint](https://github.com/golangci/golangci-lint).
+- [x] Unit tests with [Go Testing](https://pkg.go.dev/testing).
+- [x] Lint with [GolangCI-lint](https://golangci-lint.run/).
 
 
 ## Install
@@ -25,10 +25,11 @@ $ git clone git@github.com:Bendomey/nucleo-template-project.git
 
 
 ## Make scripts
-- `make run-dev`: Start development mode (load all services locally without transporter with hot-reload & REPL)
-- `npm run`: Start production mode 
+- `make run-dev`: Start app with hot-reload
+- `make run`: Start app without hot-reload
 - `make lint`: Run GolangCI-lint
-- `make test`: Run tests 
+- `make utest`: Run unit tests 
+- `make itest`: Run integration tests
 
 ## License
 nucleo-template-project is available under the [Apache License](https://www.tldrlegal.com/license/apache-license-2-0-apache-2-0)

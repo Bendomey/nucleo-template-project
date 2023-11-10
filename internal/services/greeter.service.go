@@ -3,7 +3,7 @@ package services
 import "github.com/Bendomey/nucleo-go"
 
 var Greeter = nucleo.ServiceSchema{
-	Name: "Greeter",
+	Name: "greeter",
 
 	// All your settings goes here
 	Settings: map[string]interface{}{},
@@ -11,7 +11,7 @@ var Greeter = nucleo.ServiceSchema{
 	// Dependencies are the services that this service depends on
 	Dependencies: []string{},
 
-	Version: "1",
+	Version: "v1",
 
 	// Actions are the actions that this service will perform
 	Actions: []nucleo.Action{
@@ -28,7 +28,7 @@ var Greeter = nucleo.ServiceSchema{
 
 			// Handler is the function that will be called when this action is called
 			Handler: func(context nucleo.Context, params nucleo.Payload) interface{} {
-				return "Hello World"
+				return "Hello World Nucleo"
 			},
 		},
 	},
