@@ -31,7 +31,7 @@ $ git clone git@github.com:Bendomey/nucleo-template-project.git
 - `make test`: Run tests 
 
 ## License
-TBD
+nucleo-template-project is available under the [Apache License](https://www.tldrlegal.com/license/apache-license-2-0-apache-2-0)
 
 ## Contact
 Copyright (c) 2023 Nucleo
