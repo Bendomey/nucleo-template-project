@@ -15,6 +15,7 @@ func main() {
 
 	// Register services
 	nucleoBroker.PublishServices(
+		services.GatewayApi,
 		services.Greeter,
 	)
 

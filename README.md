@@ -5,7 +5,7 @@
 - [x] Nucleo v0.1.1 with full-detailed `configs/nucleo.config.go` file.
 - [x] Common mono-repo project with a demo `greeter` service.
 - [ ] Sample database `products` service (with file-based NeDB in development & MongoDB in production).
-- [ ] Optional API Gateway service with detailed service settings.
+- [x] Optional API Gateway service with detailed service settings.
 - [ ] Beautiful static welcome page to test generated services & watch nodes and services.
 - [ ] Optional Transporter & Cacher.
 - [ ] Metrics & Tracing.
