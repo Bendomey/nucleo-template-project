@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/Bendomey/awesome-nucleo/gateway v0.0.0-20231124113319-bac6d068bef1
-	github.com/Bendomey/nucleo-go v0.1.4
+	github.com/Bendomey/nucleo-go v0.1.5
 	github.com/gin-gonic/gin v1.9.1
 	github.com/stretchr/testify v1.8.4
 )

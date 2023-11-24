@@ -1,7 +1,7 @@
 github.com/Bendomey/awesome-nucleo/gateway v0.0.0-20231124113319-bac6d068bef1 h1:meq6uaaMj+eI8axamGwSvxiuhaqUafFVXAIQchrrsW0=
 github.com/Bendomey/awesome-nucleo/gateway v0.0.0-20231124113319-bac6d068bef1/go.mod h1:einuxdKvfQ+X/iUB1ohuqohAriWWGdwLajjDjrfisng=
-github.com/Bendomey/nucleo-go v0.1.4 h1:OppX15nUP3W9mYavqzpKAVFP9Q9o7XJ5IdcQ4nhflLU=
-github.com/Bendomey/nucleo-go v0.1.4/go.mod h1:y44wtiGIaKOhLLu38RmQAKTCY0OFu2oyor+MXFnXzwU=
+github.com/Bendomey/nucleo-go v0.1.5 h1:4epzGRnnE/NLPDXeuVAFnN+Vwtx60q7OsdG8HqJVx2U=
+github.com/Bendomey/nucleo-go v0.1.5/go.mod h1:y44wtiGIaKOhLLu38RmQAKTCY0OFu2oyor+MXFnXzwU=
 github.com/DataDog/datadog-go v3.2.0+incompatible/go.mod h1:LButxg5PwREeZtORoXG3tL4fMGNddJ+vMq1mwgfaqoQ=
 github.com/alecthomas/template v0.0.0-20160405071501-a0175ee3bccc/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
 github.com/alecthomas/template v0.0.0-20190718012654-fb15b899a751/go.mod h1:LOuyumcjzFXgccqObfd/Ljyb9UuFJ6TxHnclSeseNhc=
