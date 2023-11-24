@@ -20,7 +20,7 @@ var NucleoConfig = nucleo.Config{
 
 	// Logger formatter defaults to text.
 	// Available values: json, text.
-	LogFormat: nucleo.LogFormatJSON,
+	LogFormat: nucleo.LogFormatText,
 
 	// Define transporter.
 	// Available values: MEMORY, nats://localhost:4222, kafka://localhost:9092.

@@ -31,5 +31,23 @@ var Greeter = nucleo.ServiceSchema{
 				return "Hello World Nucleo"
 			},
 		},
+
+		{
+			// Name of action
+			Name: "say",
+
+			// Description of action. This really has no use in internal services. It just helps with code readability.
+			Description: "Say hello to the world",
+
+			// validations for your params should be here.
+			Params: map[string]interface{}{
+				"something": "required",
+			},
+
+			// Handler is the function that will be called when this action is called
+			Handler: func(context nucleo.Context, params nucleo.Payload) interface{} {
+				return "Say " + params.Get("something").String()
+			},
+		},
 	},
 }

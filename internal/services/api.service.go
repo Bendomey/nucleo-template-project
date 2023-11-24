@@ -5,6 +5,7 @@ import (
 
 	"github.com/Bendomey/awesome-nucleo/gateway"
 	"github.com/Bendomey/nucleo-go"
+	"github.com/Bendomey/nucleo-go/errors"
 	"github.com/Bendomey/nucleo-go/payload"
 	"github.com/Bendomey/nucleo-go/serializer"
 	"github.com/gin-gonic/gin"
@@ -51,7 +52,8 @@ var GatewayApi = nucleo.ServiceSchema{
 				MappingPolicy: gateway.MappingPolicyRestrict,
 
 				Aliases: map[string]string{
-					"GET /greeter": "v1.greeter.hello",
+					"GET /greeter":      "v1.greeter.hello",
+					"POST /greeter/say": "v1.greeter.say",
 				},
 
 				// Before call hook. You can check the request.
@@ -88,15 +90,19 @@ var GatewayApi = nucleo.ServiceSchema{
 
 		"onError": func(context *gin.Context, response nucleo.Payload) {
 			jsonSerializer := serializer.JSONSerializer{}
+
+			nucleoError := response.Value().(errors.NucleoError)
+
 			responsePayload := payload.New(map[string]interface{}{
-				"error": response.Error().Error(),
-				"type":  "NotFound",
-				"code":  400,
+				"message": nucleoError.Message,
+				"type":    nucleoError.Type,
+				"code":    nucleoError.Code,
+				"data":    nucleoError.Data,
 			})
 			json := jsonSerializer.PayloadToBytes(responsePayload)
 
+			context.Writer.WriteHeader(nucleoError.Code)
 			context.Writer.Write(json)
-			fmt.Print("error occured")
 		},
 	},
 }
